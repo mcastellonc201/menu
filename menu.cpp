@@ -54,7 +54,7 @@ int main()
 				index -= 1;
 				if (index == -1)
 				{
-					index = 2;
+					index = NOPTIONS-1;
 				}
 				break;
 			}
