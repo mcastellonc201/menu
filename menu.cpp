@@ -1,4 +1,4 @@
-#define NOPTIONS 14
+#define NOPTIONS 6
 #include <iostream>
 #include <windows.h>
 
@@ -8,18 +8,10 @@ int main()
 	SendMessage(::GetConsoleWindow(), WM_SYSKEYDOWN, VK_RETURN, 0x20000000);
 
 	std::string Menu[NOPTIONS] = { 
+		"  COMMAND   ",
 		"  BROWSER   ",
-		"  EXPLORER  ",
-		"  OUTLOOK   ",
-		"  CMD       ",
-		"  NOTEPAD   ",
-		"  WORD      ",
-		"  EXCEL     ",
-		"  POWERPNT  ",
-		"  PAINT     ",
-		"  PANEL     ",
-		"  PRINTERS  ",
-		"  NET       ",
+		"  PROGRAMS  ",
+		"  CONTROL   ",
 		"  REBOOT    ",
 		"  POWEROFF  "
 	};
@@ -73,74 +65,35 @@ int main()
 				{
 				case 0:
 				{
-					system("start www.google.com");
+					system("start cmd");
 				}
 				break;
 				case 1:
 				{
-					system("start explorer");
+					system("start www.google.com");
 				}
 				break;
 				case 2:
 				{
-					system("start outlook");
+					system("start explorer \"C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\" ");
 				}
 				break;
 				case 3:
 				{
-					system("start cmd");
+					system("start control");
 				}
 				break;
 				case 4:
 				{
-					system("start notepad");
+					system("shutdown -r -t 0");
 				}
 				break;
 				case 5:
 				{
-					system("start winword");
-				}
-				break;
-				case 6:
-				{
-					system("start excel");
-				}
-				break;
-				case 7:
-				{
-					system("start powerpnt");
-				}
-				break;
-				case 8:
-				{
-					system("start mspaint");
-				}
-				break;
-				case 9:
-				{
-					system("start control");
-				}
-				break;
-				case 10:
-				{
-					system("start control printers");
-				}
-				break;
-				case 11:
-				{
-					system("start control netconnections");
-				}
-				break;
-				case 12:
-				{
-					system("shutdown -r -t 0");
-				}
-				break;
-				case 13:
-				{
 					system("shutdown -s -t 0");
 				}
 				break;
+				
 
 				}
 				break;
