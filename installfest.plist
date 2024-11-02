@@ -17,7 +17,7 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.krunal.demoapp</string>
+				<string>com.google.ios.youtube</string>
 				<key>bundle-version</key>
 				<string>1.0</string>
 				<key>kind</key>
