@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://192.168.0.2/install.ipa</string>
+					<string>http://192.168.0.6/install.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
